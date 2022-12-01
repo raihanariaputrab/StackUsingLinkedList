@@ -38,6 +38,11 @@ namespace StackUsingLinkedList
             top = fresh;
             Console.WriteLine("\n" + element + "pushed. ");
         }
+        public void pop()
+        {
+            Console.WriteLine("\nThe popped element is: " + top.info);
+            top = top.next;
+        }
     }
     internal class Program
     {
